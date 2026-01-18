@@ -170,12 +170,24 @@ footer .small {
 
 /* Responsive */
 @media (max-width: 600px) {
+    .container {
+        padding: 0 12px;
+    }
+
     .hero {
-        padding: 60px 20px;
+        padding: 48px 12px;
+    }
+
+    .intro {
+        padding: 40px 12px;
+    }
+
+    .reasons {
+        padding: 40px 12px;
     }
 
     .reason-card {
-        padding: 24px;
+        padding: 16px;
     }
 
     .reason-number {
@@ -187,6 +199,14 @@ footer .small {
 
     .reason-card h2 {
         padding-right: 0;
+    }
+
+    .cta {
+        padding: 40px 12px;
+    }
+
+    footer {
+        padding: 32px 12px;
     }
 }
 
