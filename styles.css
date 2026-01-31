@@ -54,6 +54,42 @@ body {
     margin: 0 auto;
 }
 
+.hero .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.9375rem;
+    opacity: 0.85;
+    margin-top: 24px;
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero .author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.hero .author .author-name {
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.hero .author:hover .author-avatar {
+    transform: scale(1.05);
+}
+
+.hero .author:hover .author-name {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 /* Intro Section */
 .intro {
     padding: 60px 24px;
@@ -201,6 +237,40 @@ footer {
     color: var(--color-white);
     padding: 40px 24px;
     text-align: center;
+}
+
+.footer-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.footer-author .author-name {
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.footer-author:hover .footer-avatar {
+    transform: scale(1.05);
+}
+
+.footer-author:hover .author-name {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 footer p {
